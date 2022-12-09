@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Hostname
-HOSTNAME=iSofuto
+HOSTNAME=Quine22
 sudo scutil --set ComputerName $HOSTNAME
 sudo scutil --set HostName $HOSTNAME
 sudo scutil --set LocalHostName $HOSTNAME
@@ -15,19 +15,21 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 
 # Dotfiles
-DOTFILES=(aliases gemrc gitconfig gitignore p10k.zsh railsrc tmux.conf vimrc zpreztorc zprofile zshrc)
+# DOTFILES=(aliases gemrc gitconfig gitignore p10k.zsh railsrc tmux.conf vimrc zpreztorc zprofile zshrc)
+DOTFILES=(aliases gemrc gitconfig gitignore railsrc tmux.conf zpreztorc zprofile zshrc)
 for file in $DOTFILES; do
   rm -f "$HOME/.$file"
-  ln -s "$HOME/code/dotfiles/$file" "$HOME/.$file"
+  ln -s "$HOME/Code/dotfiles/$file" "$HOME/.$file"
 done
 
-CONF_DIRS=(kitty bat)
+# CONF_DIRS=(kitty bat)
+CONF_DIRS=(bat)
 for dir in $CONF_DIRS; do
-  ln -s "$HOME/code/dotfiles/$dir" "$HOME/.config/$dir"
+  ln -s "$HOME/Code/dotfiles/$dir" "$HOME/.config/$dir"
 done
 
 # Homebrew
-cd "$HOME/code/dotfiles"
+cd "$HOME/Code/dotfiles"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle
 bat cache --build

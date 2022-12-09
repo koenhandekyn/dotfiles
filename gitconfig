@@ -1,10 +1,10 @@
 [user]
-	name = Kenneth Geerts
-	email = kenneth@sofuto.be
+	name = Koen Handekyn
+	email = koen.handekyn@quine.be
 [color]
 	ui = auto
 [core]
-	excludesfile = /Users/kenneth/.gitignore
+	excludesfile = /Users/koenhandekyn/.gitignore
 	pager = delta
 [interactive]
 	diffFilter = delta --color-only

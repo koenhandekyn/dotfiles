@@ -1,4 +1,4 @@
-# Kenneth's dotfiles
+# Fork from Kenneth's dotfiles
 
 ![Screenshot](https://i.imgur.com/CgUupYP.png)
 
