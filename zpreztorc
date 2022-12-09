@@ -46,8 +46,9 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'tmux' \
   'ruby' \
-  'rails' \
-  'zsh-aws-vault'
+  'rails' 
+
+# 'zsh-aws-vault'
 
 #
 # Autosuggestions
@@ -234,3 +235,16 @@ zstyle ':prezto:module:tmux:session' name 'Hack'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 zstyle ':prezto:module:utility' safe-ops 'no'
+
+#
+# History
+#
+
+# Set the file to save the history in when an interactive shell exits.
+# zstyle ':prezto:module:history' histfile "${ZDOTDIR:-$HOME}/.zsh_history"
+
+# Set the maximum  number  of  events  stored  in  the  internal history list.
+# zstyle ':prezto:module:history' histsize 10000
+
+# Set the maximum number of history events to save in the history file.
+# zstyle ':prezto:module:history' savehist 10000

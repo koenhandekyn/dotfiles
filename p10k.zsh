@@ -48,7 +48,6 @@
 
   # Left prompt segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-    custom_awsvault
     dir                       # current directory
     rbenv                     # ruby environment
     vcs                       # git status
