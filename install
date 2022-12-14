@@ -13,6 +13,9 @@ setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
+## download plugin
+git clone --recursive https://github.com/blimmer/zsh-aws-vault "${ZDOTDIR:-$HOME}/.zprezto/contrib/zsh-aws-vault"
+
 
 # Dotfiles
 DOTFILES=(aliases gemrc gitconfig gitignore p10k.zsh railsrc tmux.conf zpreztorc zprofile zshrc)
@@ -21,8 +24,7 @@ for file in $DOTFILES; do
   ln -s "$HOME/Work/dotfiles/$file" "$HOME/.$file"
 done
 
-# CONF_DIRS=(kitty bat)
-CONF_DIRS=(bat)
+CONF_DIRS=(kitty bat)
 for dir in $CONF_DIRS; do
   ln -s "$HOME/Work/dotfiles/$dir" "$HOME/.config/$dir"
 done

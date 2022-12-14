@@ -40,6 +40,21 @@ brew "stats"
 # brew "libyaml"
 # brew "youtube-dl"
 
+# 682658836   GarageBand            (10.4.7)
+# 409183694   Keynote               (12.2.1)
+# 408981434   iMovie                (10.3.5)
+# 409201541   Pages                 (12.2.1)
+# 409203825   Numbers               (12.2.1)
+
+# 937984704   Amphetamine           (5.2.2)
+# 482362007   Locksmith             (2.0.2)
+# 1147396723  WhatsApp              (2.2245.9)
+
+# 985367838   Microsoft Outlook     (16.67)
+# 462054704   Microsoft Word        (16.67)
+# 462058435   Microsoft Excel       (16.67)
+# 462062816   Microsoft PowerPoint  (16.67)
+
 # mas "Amphetamine", id: 937984704
 # mas "Authenticator App", id: 1538761576
 # mas "Keynote", id: 409183694
@@ -53,9 +68,9 @@ mas "WhatsApp", id: 1147396723
 
 # cask "gitup"
 # cask "homebrew/cask/docker"
-# cask "kitty"
 # cask "postgres-unofficial"
 # cask "teamviewer"
+cask "kitty"
 cask "firefox"
 cask "google-chrome"
 cask "microsoft-teams"

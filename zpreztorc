@@ -46,9 +46,10 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'tmux' \
   'ruby' \
-  'rails' 
+  'rails' \
+  'zsh-aws-vault'
 
-# 'zsh-aws-vault'
+# 
 
 #
 # Autosuggestions
@@ -70,7 +71,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'vi'
+zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
 zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -203,7 +204,8 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
-zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
+# default '%n@%m: %s'
+zstyle ':prezto:module:terminal:window-title' format '%s'
 
 # Set the tab title format.
 zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
@@ -225,7 +227,7 @@ zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 
 # Set the default session name:
-zstyle ':prezto:module:tmux:session' name 'Hack'
+zstyle ':prezto:module:tmux:session' name 'Quine'
 
 #
 # Utility
@@ -248,3 +250,8 @@ zstyle ':prezto:module:utility' safe-ops 'no'
 
 # Set the maximum number of history events to save in the history file.
 # zstyle ':prezto:module:history' savehist 10000
+
+##################
+
+bindkey -M emacs '^[[1;5C' forward-word
+bindkey -M emacs '^[[1;5D' backward-word

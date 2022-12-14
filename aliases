@@ -1,7 +1,5 @@
 alias c='code .'
-# alias cat='bat'
 alias bd='bin/dev'
-# alias difff='kitty +kitten diff'
 alias ls='exa -al --group-directories-first' # my preferred listing
 alias la='exa -a --group-directories-first'  # all files and dirs
 alias ll='exa -l --group-directories-first'  # long format
@@ -9,5 +7,8 @@ alias lt='exa -aT --group-directories-first' # tree listing
 alias l='ls'
 alias lg='lazygit'
 alias ping='prettyping'
-alias todo='vim /Users/kenneth/Library/Mobile\ Documents/com~apple~CloudDocs/todo.xit'
 alias weer='curl -4 http://wttr.in/Merendree | less'
+
+# alias cat='bat'
+# alias difff='kitty +kitten diff'
+# alias todo='vim /Users/kenneth/Library/Mobile\ Documents/com~apple~CloudDocs/todo.xit'
